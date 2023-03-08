@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Projeto Front-end: Chat Box</title>
+	Projeto Front-end: Chat Box
 	<link rel="stylesheet" type="text/css" href="readme.css">
 </head>
 <body>
