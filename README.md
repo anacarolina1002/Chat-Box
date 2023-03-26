@@ -17,17 +17,19 @@
 			<ul>
 				<li>HTML5</li>
 				<li>CSS3</li>
+				<li>JavaScript</li>
 			</ul>
 		</section>
 		<section>
 			<h2>Motivação</h2>
-			<p>A motivação para a criação deste projeto foi aprimorar minhas habilidades em HTML e CSS. Além disso, acredito que a criação de um chat box é um desafio interessante para praticar o layout de uma interface de usuário e a interação entre elementos HTML.</p>
+			<p>A motivação para a criação deste projeto foi aprimorar minhas habilidades em HTML,CSS e Javascript. Além disso, acredito que a criação de um chat box é um desafio interessante para praticar o layout de uma interface de usuário e a interação entre elementos HTML.</p>
 		</section>
 		<section>
 			<h2>Funcionalidades</h2>
 			<ul>
 				<li>Envio de mensagens</li>
 				<li>Visualização de mensagens antigas</li>
+				<li>Deletar o histórico de mensagens</li>
 			</ul>
 		</section>
 		<section>
