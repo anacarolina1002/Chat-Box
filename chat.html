@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chat Box</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="chat-box.css">
+    <title>Chat Box</title>
 </head>
 <body>
     <header class="fixed-header">
@@ -17,25 +17,55 @@
             </div>
             <div class="chat-body">
                 <ul class="messages">
-                    <li class="message incoming">
-                        <p>Como posso ajudar?</p>
-                    </li>
-                    <li class="message outgoing">
-                        <p>Poderia me tirar uma dúvida?</p>
-                    </li>
-                    <li class="message incoming">
-                        <p>Claro! Qual sua dúvida?</p>
-                    </li>
                 </ul>
             </div>
             <div class="chat-footer">
                 <input type="text" placeholder="Digite aqui...">
                 <button>Enviar</button>
+                <button id="limpar">Limpar</button>
             </div>
         </div>
     </div>
     <footer class="footer">
         Created by <a href="https://www.instagram.com/anacarolinamachad0_/">Ana Carolina Machado</a> e <a href="https://www.instagram.com/artur.barbosa_b/">Artur Barbosa</a>
     </footer>
+    <script>
+        // Acessa o botão e o input do HTML
+        const button = document.querySelector("button");
+        const input = document.querySelector("input[type='text']");
+    
+        // Adiciona um evento de clique no botão
+        button.addEventListener("click", () => {
+            // Acessa a ul onde as mensagens são exibidas
+            const messages = document.querySelector(".messages");
+    
+            // Cria um novo li com a mensagem enviada
+            const newMessage = document.createElement("li");
+            newMessage.classList.add("message", "outgoing");
+    
+            // Cria a div que contém a mensagem
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("text");
+            messageDiv.textContent = input.value;
+    
+            // Adiciona a div à mensagem
+            newMessage.appendChild(messageDiv);
+    
+            // Adiciona a nova mensagem à ul
+            messages.appendChild(newMessage);
+    
+            // Limpa o valor do input
+            input.value = "";
+    
+        });
+    
+        // Adiciona um evento de clique no botão "Limpar"
+        const limparButton = document.querySelector("#limpar");
+    
+        limparButton.addEventListener("click", () => {
+          const messages = document.querySelector(".messages");
+          messages.innerHTML = "";
+        });
+    </script>
 </body>
 </html>
