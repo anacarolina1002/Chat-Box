@@ -3,6 +3,31 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="chat-box.css">
+    <title>Chat Box</title>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Chat box</h1>
+    </header>
+    <div class="chat-container">
+        <div class="chat-box">
+            <div class="chat-header">
+                <h2>Atendimento</h2>
+                <span class="online"></span>
+            </div>
+            <div class="chat-body">
+                <ul class="messages">
+                </ul>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Digite aqui...">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        Created by <a href="https://www.instagram.com/anacarolinamachad0_/">Ana Carolina Machado</a> e <a href="https://www.instagram.com/artur.barbosa_b/">Artur Barbosa</a>
+    </footer>
     <script>
         // Acessa o botão e o input do HTML
         const button = document.querySelector("button");
@@ -31,31 +56,6 @@
             // Limpa o valor do input
             input.value = "";
         });
-
     </script>
-</head>
-<body>
-    <header class="fixed-header">
-        <h1>Chat box</h1>
-    </header>
-    <div class="chat-container">
-        <div class="chat-box">
-            <div class="chat-header">
-                <h2>Atendimento</h2>
-                <span class="online"></span>
-            </div>
-            <div class="chat-body">
-                <ul class="messages">
-                </ul>
-            </div>
-            <div class="chat-footer">
-                <input type="text" placeholder="Digite aqui...">
-                <button>Enviar</button>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        Created by <a href="https://www.instagram.com/anacarolinamachad0_/">Ana Carolina Machado</a> e <a href="https://www.instagram.com/artur.barbosa_b/">Artur Barbosa</a>
-    </footer>
 </body>
 </html>
