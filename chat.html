@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="chat-box.css">
-  <script>
-    // Acessa o botão e o input do HTML
-    const button = document.querySelector("button");
-    const input = document.querySelector("input[type='text']");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="chat-box.css">
+    <script>
+        // Acessa o botão e o input do HTML
+        const button = document.querySelector("button");
+        const input = document.querySelector("input[type='text']");
 
-    // Adiciona um evento de clique no botão
-    button.addEventListener("click", () => {
-      // Acessa a ul onde as mensagens são exibidas
-      const messages = document.querySelector(".messages");
+        // Adiciona um evento de clique no botão
+        button.addEventListener("click", () => {
+            // Acessa a ul onde as mensagens são exibidas
+            const messages = document.querySelector(".messages");
 
-      // Cria um novo li com a mensagem enviada
-      const newMessage = document.createElement("li");
-      newMessage.classList.add("message", "outgoing");
-      newMessage.textContent = input.value;
+            // Cria um novo li com a mensagem enviada
+            const newMessage = document.createElement("li");
+            newMessage.classList.add("message", "outgoing");
 
-      // Adiciona a nova mensagem à ul
-      messages.appendChild(newMessage);
+            // Cria a div que contém a mensagem
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("text");
+            messageDiv.textContent = input.value;
 
-      // Limpa o valor do input
-      input.value = "";
-    });
+            // Adiciona a div à mensagem
+            newMessage.appendChild(messageDiv);
 
-  </script>
+            // Adiciona a nova mensagem à ul
+            messages.appendChild(newMessage);
+
+            // Limpa o valor do input
+            input.value = "";
+        });
+
+    </script>
 </head>
 <body>
-  <header class="fixed-header">
-    <h1>Chat box</h1>
-  </header>
-  <div class="chat-container">
-    <div class="chat-box">
-      <div class="chat-header">
-        <h2>Atendimento</h2>
-        <span class="online"></span>
-      </div>
-      <div class="chat-body">
-        <ul class="messages">
-        </ul>
-      </div>
-      <div class="chat-footer">
-        <input type="text" placeholder="Digite aqui...">
-        <button>Enviar</button>
-      </div>
+    <header class="fixed-header">
+        <h1>Chat box</h1>
+    </header>
+    <div class="chat-container">
+        <div class="chat-box">
+            <div class="chat-header">
+                <h2>Atendimento</h2>
+                <span class="online"></span>
+            </div>
+            <div class="chat-body">
+                <ul class="messages">
+                </ul>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Digite aqui...">
+                <button>Enviar</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <footer class="footer">
-    Created by <a href="https://www.instagram.com/anacarolinamachad0_/">Ana Carolina Machado</a> e <a href="https://www.instagram.com/artur.barbosa_b/">Artur Barbosa</a>
-  </footer>
+    <footer class="footer">
+        Created by <a href="https://www.instagram.com/anacarolinamachad0_/">Ana Carolina Machado</a> e <a href="https://www.instagram.com/artur.barbosa_b/">Artur Barbosa</a>
+    </footer>
 </body>
 </html>
