@@ -10,14 +10,14 @@
 	</header>
 	<main>
 		<section>
-			<p>Olá, eu sou a Ana Carolina Machado e este é o meu projeto front-end para o curso de engenharia de software. O objetivo deste projeto é desenvolver um chat box usando HTML e CSS.</p>
+			<p>Olá, eu sou a Ana Carolina Machado e este é o meu projeto front-end para o curso de engenharia de software. O objetivo deste projeto é desenvolver um chat box usando HTML, CSS e Javascript.</p>
 		</section>
 		<section>
 			<h2>Tecnologias Utilizadas</h2>
 			<ul>
 				<li>HTML5</li>
 				<li>CSS3</li>
-				<li>JavaScript</li>
+				<li>Javascript</li>
 			</ul>
 		</section>
 		<section>
