@@ -66,6 +66,14 @@
           const messages = document.querySelector(".messages");
           messages.innerHTML = "";
         });
+        
+        // Adiciona um evento de pressionar tecla no input
+        input.addEventListener("keydown", (event) => {
+          if (event.keyCode === 13) {
+            event.preventDefault();
+            button.click();
+          }
+        });
     </script>
 </body>
 </html>
