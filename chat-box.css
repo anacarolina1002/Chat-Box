@@ -126,6 +126,7 @@ body {
 
 
 .chat-footer button {
+    margin-right: 5px;
 	padding: 10px;
 	border: none;
 	background-color:#6441a5;
