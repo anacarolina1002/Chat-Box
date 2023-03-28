@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*alterações realizadas no redimensionamento da tela e do chat-box*/
-@media (max-width: 2000px) {
-    .chat-box {
-      max-width: 100%;
-
-    }
-  }
-* {
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Open Sans';
@@ -51,8 +42,7 @@ body {
   }
 
 .chat-body {
-    padding: 2.5%;
-    height: 73%;
+    height: 67%;
     overflow:auto;
 }
 .chat-header {
