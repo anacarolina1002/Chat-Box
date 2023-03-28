@@ -81,6 +81,9 @@ body {
     margin-bottom: 1%;
     border-radius: 5px;
     font-size: 1.2em;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
 }
 
 .message.incoming {
@@ -108,7 +111,6 @@ body {
 
 .chat-footer input[type="text"] {
     flex:1;
-    padding: 1%;
     border-color: rgb(233, 233, 233);
     border-width: 0.1em;
     border-radius: 5px;
@@ -117,7 +119,11 @@ body {
     outline: none;
     min-height: 60%;
 }
-
+::-webkit-input-placeholder  { 
+    color:rgba(182, 177, 177, 0.685); 
+    padding-left: 1vh;
+    font-size: 18px;
+}
 
 .chat-footer button {
     margin-right: 5px;
